@@ -1,11 +1,11 @@
 # Weather-Journal App Project
 
-## created an asynchronous web app using "openWeatherMap" API.
+### created an asynchronous web app using "openWeatherMap" API.
 
-## dynamically update the UI.
+### dynamically update the UI.
 
-## modifying the `server.js` file and the `website/app.js` file.
+### modifying the `server.js` file and the `website/app.js` file.
 
-# Refrances 
+## Refrances 
 - https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
