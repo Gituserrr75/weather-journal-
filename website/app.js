@@ -67,7 +67,7 @@ function getData() {
       const data = await response.json();
       document.getElementById("temp").innerHTML = data.temp + " degrees.";
       document.getElementById("date").innerHTML = data.date;
-      document.getElementById("content").innerHTML = data.content;
+      document.getElementById("content").innerHTML = `I'm feeling ${data.content}`;
     } catch (error) {
       console.log("error", error);
     }
