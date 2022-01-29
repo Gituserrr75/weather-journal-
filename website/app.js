@@ -36,6 +36,7 @@ function getData() {
     postData("/add", {
       date: newDate,
       temp: data.main.temp,
+      speed: data.wind.speed,
       content: feelings.value,
     }).then(() => {
       retriveData();
@@ -66,6 +67,7 @@ function getData() {
     try {
       const data = await response.json();
       document.getElementById("temp").innerHTML = data.temp + " degrees.";
+      document.getElementById("speed").innerHTML = `wind speed : ${data.speed}` ;
       document.getElementById("date").innerHTML = data.date;
       document.getElementById("content").innerHTML = `I'm feeling ${data.content}`;
     } catch (error) {
